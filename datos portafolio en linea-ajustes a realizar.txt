@@ -1,0 +1,92 @@
+en esta version se realizo:
+se agrego icono youtube a "mostrar info"
+se arreglo palabras clave para CEO en metas... descriptiopn y keywords
+contacto:  agregar script de validacion de datos
+
+
+
+************************************
+web de vectores - logos
+https://worldvectorlogo.com/es/logo/svg-2
+https://www.freepik.es/fotos-vectores-gratis/svg
+
+investigar para colocar sitemap.xml
+
+pendientes
+
+en acerca de mi -exp tecnol -quitarle un poco mas de espaci de separacion
+
+
+modificar sitios web wjwmplos y volverlos a subir
+
+
+modificar el alt="" de todas las imagenes
+terminar de corregir descripcion a todas las imagenes
+Portafolio.. poner director ..ceo  manager..  programador.. diseñador
+
+Poner scroll a imagen de web... En portafolio
+
+X copyright... Cambiar sitios web x arboles.. flores.. casas.. playas. (Ver img de  gpo face).. 
+Poniendo frases como mi pagina o mi sitio web.. 
+aqui mis servicios productos aqui me vera mucha gente etc
+
+
+************************************
+netlify ...   megbinario@gmail.com …. Sin@psis#2023
+actualizar sitio sin subir toda las carpetas
+https://app.netlify.com/sites/nexos-digitales/deploys
+************************************
+
+https://nexos-digitales.netlify.app/
+
+https://github.com/Sinaptron/portafolio-meg
+web:   https://sinaptron.github.io/portafolio-meg/
+
+
+
+<body oncontextmenu="return false" onkeydown="return false">
+<!-- codigo dentro del body evita la copia de imagen o codigo -->
+
+
+link de sitios:
+paginas
+veterinaria    https://fascinating-flan-94fd85.netlify.app/
+turismo     https://timely-tarsier-90e709.netlify.app/
+zapatos    https://moonlit-mousse-7cab1f.netlify.app/
+coca cola    https://clever-ganache-bf3d68.netlify.app/
+AGENCIA MARKETING        https://nimble-cuchufli-e34d5c.netlify.app/
+videojuegos    https://enchanting-babka-f83a85.netlify.app/
+electronicos   https://magical-sprite-5ea828.netlify.app/  
+peliculas     https://inspiring-bombolone-feb488.netlify.app/
+profesional    https://nimble-griffin-a68e6c.netlify.app/
+tulogo layout p capt ctes.       https://dreamy-dodol-3c2c60.netlify.app/
+modernbrand  layout p capt de ctes     https://quiet-hummingbird-7a1e33.netlify.app/
+   
+
+
+sitios   
+para mis hijos     https://guileless-frangollo-641d8e.netlify.app/
+publisoconusc    https://publicidaddelsoconusco3.netlify.app/
+publisoconusc   https://bucolic-elf-dd22a6.netlify.app/
+publisoconusc navideño -   https://publicidaddelsoconusco.netlify.app/
+sabiduria    https://viveconsabiduria.netlify.app/
+restaurant  https://serene-cranachan-40b44f.netlify.app/
+portafolio    https://cvportafolio-meg.netlify.app/
+minimalista   https://effervescent-longma-74fbe0.netlify.app/ 
+paralax superpos antartida    https://spontaneous-frangipane-ae9a80.netlify.app/
+
+************************************
+
+https://home.openweathermap.org/
+key api de clima   
+c75bcd7ce05f924af668235e2f2a641e
+megbinario gmail... sinapsis7
+
+conertir jpg png a svg...
+https://squoosh.app/editor
+
+web aprendizaje    https://www.mergesociety.com/
+https://www.mergesociety.com/GettingStartedFreelance
+
+
+
