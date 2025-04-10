@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nexos-digitales.netlify.app/sitemap.xml
