@@ -292,7 +292,7 @@ main {
 }
 
 .avatar-box img {
-  border-radius: 50%;  
+  border-radius: 20%;  
 }
 
 .info-content .name {
@@ -1256,7 +1256,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box img { 
     width: 120px; 
-    border-radius: 50%; 
+    border-radius: 20%; 
     object-fit: cover;  
   }
 
@@ -1791,4 +1791,117 @@ textarea.form-input::-webkit-resizer { display: none; }
     transform: translate(-50%, 0%);
 
     transition: all 500ms ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ================================================
+	 🔹  Sección de invitación
+	 ================================================ */
+
+   .contacto-flex {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+	
+}
+
+.formulario-container {
+    flex: 1;
+    min-width: 0;
+	
+}
+
+.invitacion-container {
+    flex: 0 0 300px;
+}
+
+/* Estilos para la tarjeta de invitación */
+.invitacion-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	
+}
+
+.invitacion-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.invitacion-card p {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.invitacion-card  img {
+    border-radius: 10px;
+    /* padding: 1.5rem; */
+	width: 3.5%;
+    height: 3.5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.btn-invitacion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #4a6fa5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-invitacion:hover {
+    background-color: #3a5a8f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-invitacion svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-invitacion:hover svg {
+    transform: translateX(3px);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contacto-flex {
+        flex-direction: column;
+    }
+    
+    .invitacion-container {
+        flex: 1;
+    }
+    
+    .invitacion-card {
+        padding: 1.25rem;
+    }
 }
