@@ -1793,19 +1793,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     transition: all 500ms ease-in;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* ================================================
 	 🔹  Sección de invitación
 	 ================================================ */
@@ -1831,7 +1818,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .invitacion-card {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: .5rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1842,13 +1829,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .invitacion-card h3 {
     color: #2c3e50;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     font-size: 1.25rem;
 }
 
 .invitacion-card p {
     color: #4a5568;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
     flex-grow: 1;
 }
 
@@ -1872,7 +1859,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     background-color: #4a6fa5;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 700;
     transition: all 0.3s ease;
 }
