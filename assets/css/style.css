@@ -10,7 +10,7 @@
   --negro-suave: #414040;
   --azul-claro-1: #2D9CDB;      /* Acentos y botones */
   --azul-claro-2: #56CCF2;      /* Hover o CTA secundarios */
-  --azul-oscuro: #1B3C59;       /* Fondo base oscuro elegante */
+  --azul-oscuro: #0e6bbd;       /* Fondo base oscuro elegante */
   --azul-fuerte: #081ead; 
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -1779,25 +1779,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Estilos para la tarjeta de invitación */
 .invitacion-card {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #e3f8e3;
     border-radius: 10px;
     padding: .5rem;
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px  #a5d6a7;
 	text-align: center;
 	
 }
 
 .invitacion-card h3 {
-    color: #2c3e50;
+    color: #388e3c;
     margin-bottom: .5rem;
     font-size: 1.25rem;
 }
 
 .invitacion-card p {
-    color: #4a5568;
+    color: #4caf50;
     margin-bottom: .5rem;
     flex-grow: 1;
 }
@@ -1819,7 +1819,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background-color: #4a6fa5;
+    background-color:  #3a5a8f;
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -1828,7 +1828,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .btn-invitacion:hover {
-    background-color: #3a5a8f;
+    background-color: #a5d6a7;
+    color:  #3a5a8f;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -1868,24 +1869,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: bold;
 }
 
-/* COLORES MAS VIVOS PARA TODAS LAS IMAGENES
-todas las etiquetas <img> de tu sitio para hacer que se vean más vivas, con colores mejorados y efecto suave al pasar el mouse: */
-
-img {
-  /* max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px; */
-
-  /* Mejora de color */
-  filter: brightness(1) contrast(1) saturate(1);
-
-  /* Animación suave */
-  transition: filter 0.3s ease, transform 0.3s ease;
+/* COLORES MAS VIVOS PARA TODAS LAS IMAGENES */
+.card .img img {
+  filter: brightness(1.1) contrast(1.05) saturate(1.2);
+  transition: transform 0.4s ease, filter 0.3s ease;
+  border-radius: 10px;
 }
 
-/* img:hover {
-  filter: brightness(1.2) contrast(1.4) saturate(1.7);
-  transform: scale(1.02);
-} */
+.card:hover .img img {
+  transform: scale(1.05);
+  filter: brightness(1.2) contrast(1.1) saturate(1.3);
+}
 
