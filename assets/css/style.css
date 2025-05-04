@@ -904,7 +904,7 @@ main {
 
 .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
-.project-item-icon-box {
+/* .project-item-icon-box {
   --scale: 0.8;
 
   background: var(--negro-suave);
@@ -919,7 +919,7 @@ main {
   opacity: 0;
   z-index: 1;
   transition: var(--transition-1);
-}
+} */
 
 .project-item > a:hover .project-item-icon-box {
   --scale: 1;
@@ -956,14 +956,17 @@ main {
 
 
 
-
+/* codigo del icono OJO ver proyecto */
 .project-link-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 8px;
+  /* margin-top: 8px; */
   padding: 0 10px;
+
+
+  gap: 10px;
 }
 
 .project-link-text {
@@ -974,21 +977,17 @@ main {
 }
 
 .project-icon {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #007bff;
   cursor: pointer;
+  background: var(--gris-claro);
+  padding: 10px;
+  border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
+.project-icon:hover {
+color: var(--orange-fuerte);
+background: var(--gris-oscuro);
+} 
 
 
 
@@ -1938,22 +1937,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-/* .barra-deslizable {
-  max-height: 600px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-} */
-
-/* .barra-deslizable {
-  max-height: 600px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  border-radius: 15px;
-}
- */
-
+/* BARRA DESLIZABLE DE LAS TARJETAS */
  .iframe-container {
   max-height: 500px;
   display: flex;
@@ -1970,8 +1954,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   height: 360px;
   overflow-y: auto;
   overflow-x: hidden;
-  border-radius: 15px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* border: 4px solid #8a1212; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -1982,7 +1966,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 15px 15px 0 0;
+  /* border-radius: 10px 10px 0 0; */
 }
 
 /* Ajuste responsivo adicional (opcional) */
@@ -2001,22 +1985,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Estilos para navegadores WebKit (Chrome, Edge, Safari) */
 .imagen-scroll-wrapper::-webkit-scrollbar {
-  width: 14px; /* Aquí defines el ancho del scroll */
+  width: 16px; /* Aquí defines el ancho del scroll */
+ /* border-radius: 10px; */
 }
 
 .imagen-scroll-wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Fondo del track */
-  border-radius: 10px;
+  background: var(--gris-oscuro); /* Fondo del track */
+  /* border-radius: 10px; */
 }
 
 .imagen-scroll-wrapper::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color del scroll */
-  border-radius: 5px;
-  border: 3px solid #f1f1f1; /* Espacio interior alrededor del thumb */
+  background-color: var(--negro-fuerte); /* Color del scroll */
+  border: 3px solid var(--gris-claro);
+  border-radius: 10px;
+  /*border: 3px solid #45d3f3; /* Espacio interior alrededor del thumb */
 }
 
 .imagen-scroll-wrapper::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Color al pasar el mouse */
+  background-color: var(--azul-fuerte); /* Color al pasar el mouse */
+  border: 3px solid var(--gris-oscuro);
 }
 
 /* para firefox */
