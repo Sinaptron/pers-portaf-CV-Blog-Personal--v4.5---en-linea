@@ -1,3 +1,13 @@
+codificar archivos para que no sean legibles:
+usar este para HTML:
+https://www.phpkobo.com/html-obfuscator
+usar este para CSS:
+https://kangax.github.io/html-minifier/
+usar este para JS:
+https://obfuscator.io/
+
+
+
 en esta version se realizo:
 se agrego icono youtube a "mostrar info"
 se arreglo palabras clave para CEO en metas... descriptiopn y keywords
