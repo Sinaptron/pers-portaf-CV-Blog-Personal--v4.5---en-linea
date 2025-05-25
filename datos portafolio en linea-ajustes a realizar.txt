@@ -7,8 +7,6 @@ usar este para JS:
 https://obfuscator.io/
 
 
-actualizar redes sociales en todas las paginas, solo el index lo tiene update
-
 en esta version se realizo:
 se agrego icono youtube a "mostrar info"
 se arreglo palabras clave para CEO en metas... descriptiopn y keywords
