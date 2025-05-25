@@ -56,7 +56,40 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// FINAL DE CODIGOS DE ACTIVACION PARA EVITAR COPIA DE CODIGO
+
+// Bloquear clic derecho
+
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault(); // Bloquea clic derecho
+});
 
 
+// Bloquear teclas como F12, Ctrl+U, Ctrl+Shift+I  Ctrl+Shift+J =metodo 03
+// en caso de que ctrl+U no bloquee, pegar sig codigo, para redireccionar a otro sitio
 
+document.onkeydown = function (event) {
+  if (event.ctrlKey && event.key === "u") {
+    window.location.href = "https://www.google.com"; // Redirige a otro sitio
+    return false;
+  }
+};
+
+
+// Bloquear el acceso al mapa si detectan herramientas de desarrollador
+// cerrar la página si alguien abre las herramientas de inspección:
+
+setInterval(function () {
+  if (
+    window.outerHeight - window.innerHeight > 100 ||
+    window.outerWidth - window.innerWidth > 100
+  ) {
+    document.body.innerHTML = "";
+    alert("Inspeccionar está deshabilitado.");
+    window.location.href = "https://www.google.com";
+  }
+}, 1000);
+
+
+// FINAL DE CODIGOS DE ACTIVACION PARA EVITAR COPIA DE CODIGO
 
