@@ -80,16 +80,16 @@ document.onkeydown = function (event) {
 // Bloquear el acceso al mapa si detectan herramientas de desarrollador
 // cerrar la página si alguien abre las herramientas de inspección:
 
-setInterval(function () {
-  if (
-    window.outerHeight - window.innerHeight > 100 ||
-    window.outerWidth - window.innerWidth > 100
-  ) {
-    document.body.innerHTML = "";
-    alert("Inspeccionar está deshabilitado.");
-    window.location.href = "https://www.google.com";
-  }
-}, 1000);
+// setInterval(function () {
+//   if (
+//     window.outerHeight - window.innerHeight > 100 ||
+//     window.outerWidth - window.innerWidth > 100
+//   ) {
+//     document.body.innerHTML = "";
+//     alert("Inspeccionar está deshabilitado.");
+//     window.location.href = "https://www.google.com";
+//   }
+// }, 1000);
 
 
 // FINAL DE CODIGOS DE ACTIVACION PARA EVITAR COPIA DE CODIGO
