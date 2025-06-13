@@ -171,3 +171,4 @@ usar este para CSS:
 https://kangax.github.io/html-minifier/
 usar este para JS:
 https://obfuscator.io/
+

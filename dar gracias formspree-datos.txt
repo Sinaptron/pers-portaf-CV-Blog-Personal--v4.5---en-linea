@@ -1,0 +1,73 @@
+para redireccionar a una página de “Gracias” (por ejemplo, gracias.html) después de enviar el formulario con Formspree, necesitas hacer dos cosas:
+
+
+✅ 1. Agregar un atributo data a tu formulario HTML
+html
+
+<form 
+  action="https://formspree.io/f/tu_codigo" 
+  method="POST" 
+  class="formulario"
+  data-formspree 
+  data-redirect="gracias.html"
+>
+  <input type="text" name="name" placeholder="Nombre" required />
+  <input type="email" name="email" placeholder="Correo" required />
+  <textarea name="message" placeholder="Mensaje" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+✅ 2. Incluir el script de Formspree para que funcione data-redirect
+Agrega este script justo antes de cerrar el </body> de tu documento HTML:
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const forms = document.querySelectorAll("form[data-formspree]");
+    forms.forEach(form => {
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const data = new FormData(form);
+        fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            window.location.href = form.dataset.redirect;
+          } else {
+            alert("Hubo un problema al enviar el formulario.");
+          }
+        }).catch(error => {
+          alert("Error de conexión.");
+        });
+      });
+    });
+  });
+</script>
+
+
+
+✅ 3. Crear la página gracias.html
+Crea un archivo sencillo para mostrar al usuario:
+
+<!-- gracias.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gracias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>¡Gracias por tu mensaje!</h1>
+  <p>Nos pondremos en contacto contigo muy pronto.</p>
+  <a href="index.html">Volver al inicio</a>
+</body>
+</html>
+
+
+
+
+

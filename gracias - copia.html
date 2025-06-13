@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>NEXOS DIGITALES | Gracias</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portafolio profesional, especializado en diseño y desarrollo de páginas web, creación de tarjetas digitales y servicios de ciberseguridad.">
+
+<!-- <meta name="description" content="Descubre el portafolio de un CEO experto en diseño web, desarrollo de sitios web, tarjetas digitales y ciberseguridad. Soluciones integrales para la transformación digital y protección online."> -->
+ 
+  <meta name="keywords" content="Diseño web Desarrollo web Optimización SEO Experiencia de usuario (UX) Interfaz de usuario (UI) Responsive design Hosting web Mantenimiento web Tarjetas Digitales QR codes Personalización de tarjetas Digital identity Virtual business cards Seguridad web Protección de datos Análisis de vulnerabilidades Prevención de intrusiones Innovación tecnológica Gestión de proyectos Transformación digital Crecimiento empresarial office windows linux" />
+ 
+  <!--   logo web  -->
+  <link rel="shortcut icon" href="assets/images/logobarra.ico" alt="icono logobarra.ico">
+
+  <!-- <link rel="stylesheet" href="gracias.css"> -->
+
+
+</head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0066ff;
+            --secondary-blue: #4da6ff;
+            --light-blue: #e6f3ff;
+            --dark-blue: #003d99;
+            --gradient-blue: linear-gradient(135deg, #0066ff 0%, #4da6ff 100%);
+            --gradient-light: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%);
+            --text-primary: #2c3e50;
+            --text-secondary: #546e7a;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 102, 255, 0.1);
+            --shadow-hover: 0 20px 40px rgba(0, 102, 255, 0.2);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--gradient-light);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated background elements */
+        .bg-decoration {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(0, 102, 255, 0.1);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .bg-circle:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .bg-circle:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 70%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .bg-circle:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            top: 50%;
+            left: 80%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        /* Main container */
+        .thank-you-container {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            animation: slideUp 0.8s ease-out;
+            overflow: hidden;
+        }
+
+        .thank-you-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-blue);
+            animation: expandWidth 1s ease-out 0.5s both;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes expandWidth {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* Animated icon */
+        .icon-container {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .thank-you-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            background: var(--gradient-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: bounceIn 1s ease-out 0.3s both;
+            box-shadow: 0 15px 35px rgba(0, 102, 255, 0.3);
+        }
+
+        .thank-you-icon::before {
+            content: '';
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border: 2px solid var(--secondary-blue);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            opacity: 0.6;
+        }
+
+        .thank-you-icon::after {
+            content: '';
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border: 1px solid var(--light-blue);
+            border-radius: 50%;
+            animation: pulse 2s infinite 0.5s;
+            opacity: 0.4;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        /* Email icon inside circle */
+        .email-icon {
+            font-size: 48px;
+            color: var(--white);
+            animation: emailFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes emailFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-5px) rotate(5deg); }
+        }
+
+        /* Typography */
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: fadeInUp 0.8s ease-out 0.9s both;
+        }
+
+        .message {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 40px;
+            padding: 0 20px;
+            animation: fadeInUp 0.8s ease-out 1.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Home button */
+        .home-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-blue);
+            color: var(--white);
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out 1.5s both;
+        }
+
+        .home-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .home-button:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .home-button:hover::before {
+            left: 100%;
+        }
+
+        .home-button:active {
+            transform: translateY(-1px);
+        }
+
+        .home-icon {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .home-button:hover .home-icon {
+            transform: translateX(-3px);
+        }
+
+        /* Success checkmark animation */
+        .checkmark-container {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 40px;
+            height: 40px;
+            background: #00c853;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: checkmarkAppear 0.5s ease-out 1.8s both;
+            box-shadow: 0 5px 15px rgba(0, 200, 83, 0.3);
+        }
+
+        .checkmark {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        @keyframes checkmarkAppear {
+            from {
+                opacity: 0;
+                transform: scale(0) rotate(-180deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /* Decorative elements */
+        .decoration-dots {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--secondary-blue);
+            opacity: 0.3;
+            animation: dotPulse 1.5s infinite;
+        }
+
+        .dot:nth-child(2) { animation-delay: 0.3s; }
+        .dot:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes dotPulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .thank-you-container {
+                padding: 40px 30px;
+                margin: 20px;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .message {
+                font-size: 0.95rem;
+                padding: 0 10px;
+            }
+
+            .thank-you-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .email-icon {
+                font-size: 40px;
+            }
+
+            .home-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+
+            .bg-circle {
+                opacity: 0.5;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-container {
+                padding: 30px 20px;
+            }
+
+            .main-title {
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .thank-you-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .email-icon {
+                font-size: 32px;
+            }
+        }
+
+        /* Loading animation for page load */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            animation: fadeOut 0.5s ease-out 2s both;
+        }
+
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid var(--light-blue);
+            border-top: 4px solid var(--primary-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Focus styles for accessibility */
+        .home-button:focus {
+            outline: 3px solid var(--secondary-blue);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Background Decoration -->
+    <div class="bg-decoration">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="thank-you-container">
+        <!-- Decorative dots -->
+        <div class="decoration-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <!-- Success checkmark -->
+        <div class="checkmark-container">
+            <div class="checkmark">✓</div>
+        </div>
+
+        <!-- Animated icon -->
+        <div class="icon-container">
+            <div class="thank-you-icon">
+                <div class="email-icon">📧</div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <h1 class="main-title">¡Mensaje Enviado!</h1>
+        
+        <p class="subtitle">
+            Tu mensaje ha sido recibido exitosamente
+        </p>
+        
+        <div class="message">
+            <p>Gracias por contactarnos. Nuestro equipo se pondrá en contacto contigo muy pronto.</p>
+            <br>
+            <p>Normalmente respondemos en un plazo de 24 horas durante días laborables.</p>
+        </div>
+
+        <!-- Home button -->
+        <a href="#" class="home-button" onclick="goHome()">
+            <span class="home-icon">🏠</span>
+            Volver al Inicio
+        </a>
+    </div>
+
+
+
+    <script>
+        // Variables para el manejo de tiempos
+        let countdownInterval;
+        let redirectTimeout;
+
+        // Function to go back to home page
+        function goHome() {
+            // Redirigir a index.html
+            window.location.href = 'index.html';
+        }
+
+        // Función para mostrar el mensaje de cuenta regresiva
+        function showCountdownMessage() {
+            // Crear elemento del mensaje
+            const messageDiv = document.createElement('div');
+            messageDiv.id = 'countdown-message';
+            messageDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 15px 25px;
+                border-radius: 10px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                z-index: 1000;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                text-align: center;
+                animation: slideDown 0.5s ease-out;
+            `;
+
+            // Agregar animación CSS
+            const animationStyle = document.createElement('style');
+            animationStyle.textContent = `
+                @keyframes slideDown {
+                    from {
+                        opacity: 0;
+                        transform: translateX(-50%) translateY(-20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateX(-50%) translateY(0);
+                    }
+                }
+            `;
+            document.head.appendChild(animationStyle);
+
+            let timeLeft = 30;
+            messageDiv.textContent = `Regresando automáticamente al inicio en ${timeLeft} segundos...`;
+            document.body.appendChild(messageDiv);
+
+            // Iniciar cuenta regresiva
+            countdownInterval = setInterval(() => {
+                timeLeft--;
+                messageDiv.textContent = `Regresando automáticamente al inicio en ${timeLeft} segundos...`;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(countdownInterval);
+                    goHome();
+                }
+            }, 1000);
+
+            // Permitir cancelar haciendo clic en el mensaje
+            messageDiv.addEventListener('click', function() {
+                clearInterval(countdownInterval);
+                clearTimeout(redirectTimeout);
+                messageDiv.remove();
+            });
+
+            messageDiv.style.cursor = 'pointer';
+            messageDiv.title = 'Haz clic para cancelar la redirección automática';
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effect to the main icon
+            const icon = document.querySelector('.thank-you-icon');
+            if (icon) {
+                icon.addEventListener('click', function() {
+                    this.style.animation = 'bounceIn 0.6s ease-out';
+                    setTimeout(() => {
+                        this.style.animation = '';
+                    }, 600);
+                });
+            }
+
+            // Add particle effect on button hover
+            const button = document.querySelector('.home-button');
+            if (button) {
+                button.addEventListener('mouseenter', function() {
+                    createParticles(this);
+                });
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && e.target === button) {
+                    goHome();
+                }
+                if (e.key === 'Escape') {
+                    // Cancelar redirección automática si se presiona Escape
+                    clearInterval(countdownInterval);
+                    clearTimeout(redirectTimeout);
+                    const messageDiv = document.getElementById('countdown-message');
+                    if (messageDiv) {
+                        messageDiv.remove();
+                    }
+                    goHome();
+                }
+            });
+
+            // Mostrar mensaje después de 15 segundos
+            setTimeout(function() {
+                showCountdownMessage();
+            }, 15000);
+
+            // Redirección automática después de 45 segundos total (15 + 30)
+            redirectTimeout = setTimeout(function() {
+                goHome();
+            }, 45000);
+        });
+
+        // Create particle effect
+        function createParticles(element) {
+            for (let i = 0; i < 6; i++) {
+                const particle = document.createElement('div');
+                particle.style.cssText = `
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    background: var(--secondary-blue);
+                    border-radius: 50%;
+                    pointer-events: none;
+                    animation: particleFloat 1s ease-out forwards;
+                `;
+                
+                const rect = element.getBoundingClientRect();
+                particle.style.left = (rect.left + Math.random() * rect.width) + 'px';
+                particle.style.top = (rect.top + Math.random() * rect.height) + 'px';
+                
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 1000);
+            }
+        }
+
+        // Add particle animation CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes particleFloat {
+                0% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(-50px) scale(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Console message for developers
+        console.log('🎉 Thank you page loaded successfully!');
+        console.log('💙 Built with love and CSS animations');
+        console.log('⏰ Auto-redirect to index.html in 45 seconds');
+    </script>
+
+
+</body>
+</html>
