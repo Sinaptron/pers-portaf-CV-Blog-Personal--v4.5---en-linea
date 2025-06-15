@@ -1,0 +1,22 @@
+/*--------  #RESET----------*/
+/* Selector universal (*)
+Qué hace: Selecciona todos los elementos HTML sin excepción
+Por qué usarlo: Para aplicar estilos base consistentes a toda la página
+Ejemplo práctico: Eliminar márgenes y padding predeterminados que los navegadores añaden */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Para prevenir la descarga de imágenes */
+img {
+  pointer-events: none; /* Evita clic derecho en imágenes */
+  -webkit-touch-callout: none; /* Para iOS */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Elimina espacio fantasma debajo */
+}
